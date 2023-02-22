@@ -1,0 +1,182 @@
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  justify-content: space-between;
+  padding: 100px;
+
+  .content {
+    padding-top: 150px;
+
+    .title {
+      font-size: 60px;
+      display: inline;
+    }
+
+    .description {
+      font-size: 20px;
+      color: gray;
+      width: 90%;
+    }
+  }
+
+  .img-responsive {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.grid2 {
+  width: 100%;
+  height: auto;
+  background-color: lightgray;
+  padding: 30px 0;
+
+  .content {
+    text-align: center;
+
+    .description {
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+
+  .points {
+    display: flex;
+    padding: 20px 100px;
+
+    h4 {
+      margin: 0 30px 30px 30px;
+    }
+
+    p {
+      margin: 0 30px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.grid3 {
+  height: auto;
+  background-image: url("../images/power-up-1.png");
+  color: white;
+  padding: 40px 100px;
+
+  .content {
+    text-align: center;
+
+    .paragraph1 {
+      padding-top: 10px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+.grid4 {
+  background-color: lightgray;
+  padding: 60px 100px;
+
+  .points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+
+    .img-responsive {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .grid1 {
+    grid-template-columns: 1fr;
+
+    .content {
+      grid-row-start: 2;
+      padding-top: 40px;
+
+      .title {
+        font-size: 40px;
+      }
+
+      .description {
+        font-size: 20px;
+        width: 100%;
+      }
+    }
+  }
+
+  .grid2 {
+    .content {
+      .description {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+
+    .points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .grid4 {
+    .points {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .grid1 {
+    padding: 60px 20px;
+  }
+
+  .grid2 {
+    .points {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 0;
+
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      p {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .grid3 {
+    padding: 40px 20px;
+  }
+
+  .grid4 {
+    padding: 0;
+
+    .points {
+      grid-gap: 0;
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    h1 {
+      margin: 20px;
+    }
+  }
+}
